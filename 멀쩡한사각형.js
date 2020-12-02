@@ -1,15 +1,16 @@
 function solution(w,h){
-    var answer = 1;
-    var gcd = 1;         
+    let gcd = 1; //최대공약수
 
-    var min = Math.min(w,h);
-    for(var i=min; i>0; i--){
+    const min = Math.min(w,h);
+    for(let i=min; i>0; i--){
         if((w%i===0) && (h%i===0)){
             gcd = i;
             break;
         }
     }
-    
-    answer = w*h - (w+h-gcd);
+
+    //참고: https://velog.io/@sso/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-JavaScript-ouk5urcahz
+    const answer = w*h - (w+h-gcd);
     return answer;
 }
+
