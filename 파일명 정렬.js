@@ -5,7 +5,7 @@ function solution(files) {
         let objectB = slice(b);
 
         return objectA.head < objectB.head ?
-            -1 : objectA.head > objectB.head ?
+                -1 : objectA.head > objectB.head ?
                 1 : objectA.number - objectB.number
     })
 
