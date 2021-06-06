@@ -17,6 +17,7 @@ function solution(progresses, speeds) {
             count = 1;
         }
     }
+
     answer.push(count);
     return answer;
 }
